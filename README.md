@@ -25,3 +25,9 @@ API for human quotes and inspirational phrases.
 - Better error handling
 - Fix eslint .js problems
 - CodeArtifact or JFrog
+- Add caching
+- Fastify vs Express
+- Production best practices for docker and express/fastify
+- Containerize node js app (https://snyk.io/blog/10-best-practices-to-containerize-nodejs-web-applications-with-docker/)
+- Synk CLI & npm audit
+

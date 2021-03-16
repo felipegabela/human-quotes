@@ -6,7 +6,9 @@
   "type": "module",
   "scripts": {
     "start": "nodemon src/api/server.js",
-    "lint": "eslint ./"
+    "lint": "eslint ./",
+    "build": "docker build -f docker/Dockerfile -t human-quotes:1.0 .",
+    "run": "docker run -d -p 3000:3000 human-quotes:1.0"
   },
   "repository": {
     "type": "git",

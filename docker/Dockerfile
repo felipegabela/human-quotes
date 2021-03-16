@@ -1,0 +1,18 @@
+# Improve this file
+FROM node:14.16.0-alpine3.10
+
+RUN apk add dumb-init
+
+ENV NODE_ENV=production
+
+WORKDIR /usr/src/app
+
+COPY --chown=node:node . /usr/src/app
+
+RUN npm ci --only=production
+
+USER node
+
+EXPOSE 3000
+
+CMD ["dumb-init", "node", "src/api/server.js"]
