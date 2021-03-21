@@ -1,0 +1,13 @@
+/docker
+/logs
+/node_modules
+Dockerfile
+docker-compose.yaml
+.git
+.gitignore
+.env
+*.md
+LICENSE
+.eslintignore
+.eslintrc.json
+npm-debug.log

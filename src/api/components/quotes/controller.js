@@ -4,7 +4,10 @@
  * It uses the service class to interact with the database. */
 
 const getRandomQuote = (req, res, next) => {
-  res.status(200).json({ message: 'hi' });
+  res.status(200).json({
+    message: 'A program is a build of thought.',
+    author: 'Marijn Haverbeke',
+  });
 };
 
 export default { getRandomQuote };

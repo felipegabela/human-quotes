@@ -7,8 +7,11 @@
   "scripts": {
     "start": "nodemon src/api/server.js",
     "lint": "eslint ./",
-    "build": "docker build -f docker/Dockerfile -t human-quotes:1.0 .",
-    "run": "docker run -d -p 3000:3000 human-quotes:1.0"
+    "build": "docker build -f docker/Dockerfile -t 765158708890.dkr.ecr.us-east-2.amazonaws.com/human-quotes:latest .",
+    "run": "docker run -d -p 3000:3000 human-quotes:1.0",
+    "snyk": "snyk test",
+    "audit": "npm audit",
+    "doctor": "npm doctor"
   },
   "repository": {
     "type": "git",
