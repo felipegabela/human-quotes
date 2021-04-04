@@ -3,11 +3,13 @@
  * validates them and sends the response data back to the client.
  * It uses the service class to interact with the database. */
 
-const getRandomQuote = (req, res, next) => {
-  res.status(200).json({
-    message: 'A program is a build of thought.',
-    author: 'Marijn Haverbeke',
-  });
+export default {
+    get: {
+        randomQuote: (req, res, next) => {
+            res.status(200).json({
+                message: 'A program is a build of thought.',
+                author: 'Marijn Haverbeke',
+            });
+        },
+    },
 };
-
-export default { getRandomQuote };

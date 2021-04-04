@@ -6,10 +6,10 @@
  *  specific middleware. */
 
 import express from 'express';
-import controller from './controller.js';
+import QuoteHandler from './controller.js';
 
 const router = express.Router();
 
-router.get('/random', controller.getRandomQuote);
+router.get('/random', QuoteHandler.get.randomQuote);
 
 export default router;
